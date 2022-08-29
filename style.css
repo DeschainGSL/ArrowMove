@@ -1,0 +1,66 @@
+ /* сброс встроенных стилей */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, 
+ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header{
+                 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+@font-face{
+    font-family: "Start";
+    font-style: normal;
+    src: url(fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+
+@keyframes topLeftTopRight {
+    from {
+        top: 0%;
+        left: 0%;
+    }
+    to {
+        top: 0%;
+        left: 90%;
+    }
+}
+@keyframes topRightTopLeft {
+    from {
+        top: 0%;
+        left: 90%;
+    }
+    to {
+        top: 0%;
+        left: 0%;
+    }
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    position: absolute;
+    /* top: 0%;
+    left: 0%; */
+    /* width: 10%;
+    height: 10%; */
+    background-color:black;
+    border-radius: 50%;
+    transition-property: top, left;
+    transition-duration: 100ms;
+}
+#field{
+    position: relative;
+    /* padding: 1vmin; */
+    width: 50vmin;
+    height: 50vmin;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+#player{
+    background-color:cadetblue;
+}
